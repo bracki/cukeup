@@ -3,8 +3,8 @@
 
 * How we previously handled our stuff
 
-!SLIDE bullets
-## Acceptance criteria tracked in various Excel Sheets
+!SLIDE bullets incremental
+# Acceptance criteria tracked in various Excel Sheets
 
 * Manually executed by the whole team
 * Ending up in "test fests", possibly going on for a couple of days
@@ -12,17 +12,23 @@
 * Varying levels of detail
 
 !SLIDE bullets incremental
-## Some of those have been converted to Selenium by a consultant
+# Some of those have been converted to Selenium by a consultant
 
 * Soon got excluded from testsuite
 * Because lost knowledge...
 * Lead to unmaintained tests
 
-!SLIDE
-## Unclear requirements esp. due to i18n
+!SLIDE bullets incremental
+# Unclear requirements esp. due to I18N
 
-* Coordinate your features with all stakeholders
->One step forward, two step backwards, down in a Babylon
+* What are the VAT regulations in Japan?
+* TODO
+
+!SLIDE
+# Coordinate your features with all stakeholders
+
+!SLIDE
+>One step forward, two step backwards, down in a Babylon...
 
 !SLIDE bullets
 ## The good parts
@@ -30,7 +36,7 @@
 * Automatic Deployment with ~hourly updates
 * Test environment is an exact replica of the live system
 
-!SLIDE
+!SLIDE bullets incremental
 # Biggest drawback
 
 # No bloody fixtures!?
@@ -48,7 +54,7 @@
 * Self Validating
 * Timely
 
-!SLIDE
+!SLIDE bullets incremental
 # Tests are ...
 
 * neither independent

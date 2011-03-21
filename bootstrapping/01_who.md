@@ -12,15 +12,21 @@
 
 !SLIDE
 
-## Hence the name "Bootstrapping"
+# Hence the name "Bootstrapping"
 
 !SLIDE
 
-## Drag yourself out of the mud by your bootstraps.
-### Or your aristocratic wig, depends on who tells the story.
+# Drag yourself out of the mud by your bootstraps.
+### (Or your aristocratic wig, depends on who tells the story.)
+
+!SLIDE full-page
+![Muenchhausen drags himself out of the mud](bootstrapping.jpg)
+
+* http://www.goethezeitportal.de/index.php?id=4443
 
 !SLIDE
 
-# Why did we get stuck?
-## When your USPs become the hardest to parts to maintain.
+# For what definition of stuck?
 
+!SLIDE
+## Maintaining a website without automated acceptance tests is _unpleasant_.
