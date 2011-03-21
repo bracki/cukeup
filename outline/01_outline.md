@@ -2,6 +2,6 @@
 # The plan #
 
 * Who needs bootstrapping anyways?
-* Status Quo Ante Cucumis Sativus
+* Status Quo Ante Cucumerem
 * The Münchhausen Move
 * Lessons Learned
