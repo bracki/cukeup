@@ -85,4 +85,22 @@
 
 
 !SLIDE
-# Outside in at its best. 
+# Outside in at its best.
+!SLIDE
+# So where's the PHP?
+!SLIDE
+# Now has become an implementation detail
+!SLIDE bullets incremental
+# Why didn't we use _cuke4php_?
+
+* We didn't know at the time
+* HTTP is the natural fit for the system
+* It doesn't fit the official naming scheme for addons
+
+!SLIDE
+
+    @@@ruby
+    it "should adhere to the naming scheme" do
+      name.should ~= /cuke4*uke/
+    end
+
