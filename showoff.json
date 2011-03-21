@@ -1,0 +1,12 @@
+{
+  "name": "Bootstrapping Cucumber",
+  "sections": [
+    {"section":"title"},
+    {"section":"about"},
+    {"section":"outline"},
+    {"section":"bootstrapping"},
+    {"section":"status_quo"},
+    {"section":"moving_on"},
+    {"section":"muenchhausen"}
+  ]
+}
