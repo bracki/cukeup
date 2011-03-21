@@ -3,7 +3,13 @@
 
 * People getting started
 * Lazy People
-* People who are stuck in uncomfortable situations
+* People _stuck_ in uncomfortable situations
+
+!SLIDE
+# For what definition of stuck?
+
+!SLIDE
+## Maintaining a website without automated acceptance tests is _unpleasant_.
 
 !SLIDE bullets incremental 
 
@@ -23,10 +29,3 @@
 ![Muenchhausen drags himself out of the mud](bootstrapping.jpg)
 
 * http://www.goethezeitportal.de/index.php?id=4443
-
-!SLIDE
-
-# For what definition of stuck?
-
-!SLIDE
-## Maintaining a website without automated acceptance tests is _unpleasant_.
