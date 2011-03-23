@@ -1,0 +1,376 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Bootstrapping Cucumber</title>
+
+  <link rel="stylesheet" href="./css/reset.css" type="text/css"/>
+  <link rel="stylesheet" href="./css/showoff.css" type="text/css"/>
+
+  <script type="text/javascript" src="./js/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src="./js/jquery-print.js"></script>
+  <script type="text/javascript" src="./js/jquery.batchImageLoad.js"></script>
+
+  <script type="text/javascript" src="./js/jquery.doubletap-0.1.js"></script>
+
+  <script type="text/javascript" src="./js/fg.menu.js"></script>
+  <script type="text/javascript" src="./js/showoff.js"></script>
+  <script type="text/javascript" src="./js/jTypeWriter.js"> </script>
+  <script type="text/javascript" src="./js/sh_main.min.js"></script>
+  <script type="text/javascript" src="./js/core.js"></script>
+  <script type="text/javascript" src="./js/showoffcore.js"></script>
+
+  <link type="text/css" href="./css/fg.menu.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/theme/ui.all.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/sh_style.css" rel="stylesheet" >
+
+  
+
+  
+
+  <script type="text/javascript">
+  $(function(){
+    setupPreso(false, './');
+  });
+  </script>
+</head>
+
+<body>
+
+
+<a tabindex="0" href="#search-engines" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="navmenu"><span class="ui-icon ui-icon-triangle-1-s"></span>slides</a>
+<div id="navigation" class="hidden"></div>
+
+<div id="help">
+  <table>
+    <tr><td class="key">space, &rarr;</td><td>next slide</td></tr>
+    <tr><td class="key">&larr;</td><td>previous slide</td></tr>
+    <tr><td class="key">d</td><td>debug mode</td></tr>
+    <tr><td class="key">## &lt;ret&gt;</td><td>go to slide #</td></tr>
+    <tr><td class="key">c</td><td>table of contents (vi)</td></tr>
+    <tr><td class="key">f</td><td>toggle footer</td></tr>
+    <tr><td class="key">r</td><td>reload slides</td></tr>
+    <tr><td class="key">z</td><td>toggle help (this)</td></tr>
+  </table>
+</div>
+
+<div id="preso">loading presentation...</div>
+<div id="footer">
+  <span id="slideInfo"></span>
+  <span id="debugInfo"></span>
+</div>
+
+<div id="slides" class="offscreen" style="display:none;">
+<div class="slide" data-transition="none"><div class="content center" ref="title/title/1">
+<p><img src="./file/title/muenchhausen.jpg" width="432" height="559" alt="logo"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="title/title/2">
+<h1>Bootstrapping Cucumber</h1>
+
+<h2>M&#xFC;nchhausen Style</h2></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="about/01_me/1">
+<h1>Who am I?</h1>
+
+<ul>
+<li>Jan Brauer</li>
+<li>Doing stuff since 1999</li>
+<li>Software Guy @ <a href="http://jimdo.com">Jimdo</a></li>
+<li>Previously worked for a Enterprise CMS vendor</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="about/01_me/2">
+<ul>
+<li><a href="http://twitter.com/bracki">@bracki</a></li>
+<li><a href="mailto:jan@jimdo.com">jan@jimdo.com</a></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="about/02_jimdo/1">
+<h1>Jimdo</h1>
+
+<p><img src="./file/about/logo.png" width="372" height="294" alt="Jimdo"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="about/02_jimdo/2">
+<h1>About Jimdo</h1>
+
+<ul>
+<li>super easy website creator</li>
+<li>founded in 2007</li>
+<li>located in Hamburg, Germany</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="about/02_jimdo/3">
+<h1>More about Jimdo</h1>
+
+<ul>
+<li>over 3.5 million websites created</li>
+<li>available in 11 languages</li>
+<li>team of ~60 in Hamburg, Tokyo, Shanghai, San Francisco</li>
+<li>runs on PHP and JavaScript</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="about/02_jimdo/4">
+<h1>As strong as the competition</h1>
+
+<p><img src="./file/about/competition.png" width="580" height="188" alt="Competition"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="about/03_you">
+<h1>Now about you...</h1>
+
+<ul>
+<li>Let's do some expectations management.</li>
+<li>What do you expect this talk to cover?</li>
+<li>What's your previous experience with Cucumber?</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="outline/01_outline">
+<h1>The plan</h1>
+
+<ul>
+<li>Who needs bootstrapping anyways?</li>
+<li>Status Quo Ante Cucumerem</li>
+<li>The M&#xFC;nchhausen Move</li>
+<li>Lessons Learned</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="bootstrapping/01_who/1">
+<h1>Who needs bootstrapping at all?</h1>
+
+<ul>
+<li>People getting started</li>
+<li>Lazy People</li>
+<li>People <em>stuck</em> in uncomfortable situations</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="bootstrapping/01_who/2">
+<h1>For what definition of stuck?</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="bootstrapping/01_who/3">
+<h2>Maintaining a website without automated acceptance tests is <em>unpleasant</em>.</h2></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="bootstrapping/01_who/4">
+<h1>AKA</h1>
+
+<h2>THE BIG BALL OF MUD</h2></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="bootstrapping/01_who/5">
+<h1>Hence the name "Bootstrapping"</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="bootstrapping/01_who/6">
+<h1>Drag yourself out of the mud by your bootstraps.</h1>
+
+<h3>(Or your aristocratic wig, depends on who tells the story.)</h3></div>
+</div><div class="slide" data-transition="none"><div class="content full-page" ref="bootstrapping/01_who/7">
+<p><img src="./file/bootstrapping/bootstrapping.jpg" width="500" height="789" alt="Muenchhausen drags himself out of the mud"/></p>
+
+<ul>
+<li>http://www.goethezeitportal.de/index.php?id=4443</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="status_quo/01_status_quo/1">
+<h1>Status Quo Ante BDD</h1>
+
+<ul>
+<li>How we previously handled our stuff</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="status_quo/01_status_quo/2">
+<h1>Acceptance criteria tracked in various Excel Sheets</h1>
+
+<ul>
+<li>Manually executed by the whole team</li>
+<li>Ending up in "test fests", possibly going on for a couple of days</li>
+<li>If taken seriously, that means locking up the whole team for every new feature</li>
+<li>Varying levels of detail</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="status_quo/01_status_quo/3">
+<h1>Some of those have been converted to Selenium by a consultant</h1>
+
+<ul>
+<li>Soon got excluded from testsuite</li>
+<li>Because lost knowledge...</li>
+<li>Lead to unmaintained tests</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="status_quo/01_status_quo/4">
+<h1>Unclear requirements esp. due to I18N</h1>
+
+<ul>
+<li>What are the VAT regulations in Japan?</li>
+<li>TODO</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="status_quo/01_status_quo/5">
+<h1>Coordinate your features with all stakeholders</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="status_quo/01_status_quo/6">
+<blockquote><p>One step forward, two step backwards, down in a Babylon...</p></blockquote></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="status_quo/01_status_quo/7">
+<h2>The good parts</h2>
+
+<ul>
+<li>Automatic Deployment with ~hourly updates</li>
+<li>Test environment is an exact replica of the live system</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="status_quo/01_status_quo/8">
+<h1>Biggest drawback</h1>
+
+<h1>No bloody fixtures!?</h1>
+
+<ul>
+<li>Meaning no setup!</li>
+<li>Meaning no teardown!</li>
+<li>Meaning, resetting your tests manually by SSHing into various systems and deleting entries from MYSQL, oh no!!!!</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="status_quo/01_status_quo/9">
+<h1>Violation of the FIRST principle</h1>
+
+<ul>
+<li>Fast</li>
+<li>Independent</li>
+<li>Repeatable</li>
+<li>Self Validating</li>
+<li>Timely</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="status_quo/01_status_quo/10">
+<h1>Tests are ...</h1>
+
+<ul>
+<li>neither independent</li>
+<li>nor repeatable</li>
+<li>thus basically maiming all Given, Before and After steps</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="moving_on/01_moving_on/1">
+<h1>How to proceed?</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="moving_on/01_moving_on/2">
+<h1>Hm, let's just ignore this and continue transforming Excel sheets into Cucumber features.</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="moving_on/01_moving_on/3">
+<h1>OK, really?</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="moving_on/01_moving_on/4">
+<h1>Hm, doesn't sound convincing.</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="moving_on/01_moving_on/5">
+<h1>Just pretend we had the ability to setup/teardown stuff and start writing Scenarios.</h1></div>
+</div><div class="slide" data-transition="none"><div class="content incremental" ref="muenchhausen/01_muenchhausen/1">
+<h1>The M&#xFC;nchhausen Move</h1>
+
+<h2>(where the bootstrapping happens)</h2></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="muenchhausen/01_muenchhausen/2">
+<h1>Spec the application driver layer by writing Cucumber scenarios</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="muenchhausen/01_muenchhausen/3">
+<h1>Where it gets all meta!</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="muenchhausen/01_muenchhausen/4">
+<pre class="sh_cucumber"><code>Feature: Manage websites via REST API
+  As a jimdo developer
+  I want to manage websites via a REST API
+  So that I can test new features easily</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content smaller" ref="muenchhausen/01_muenchhausen/5">
+<pre class="sh_cucumber"><code>Scenario: Create a new website
+  When I send a POST request to "/api/websites" with body
+  """
+  {
+    "username" : "cucumber",
+    "title" : "Can I haz Cukes?"
+  }
+  """
+  Then the response is application/json
+  And the status is 200 OK
+  And I can reach the website with username "cucumber"
+  And the website html title is "Can I haz Cukes?"</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="muenchhausen/01_muenchhausen/6">
+<h2>Use the API to replace the Given steps' implementations in the Scenarios.</h2></div>
+</div><div class="slide" data-transition="none"><div class="content smaller" ref="muenchhausen/01_muenchhausen/7">
+<h1>Before</h1>
+
+<pre class="sh_cucumber"><code>@browser @rest-api
+Feature: REST API and browser testing works
+
+Background:
+  Given I send a POST request to "/api/websites" with body
+    """
+    {
+      "username" : "cucumber",
+      "title" : "Hello world.",
+      "pages" : [
+        { "title": "Cucumber rocks!" }
+      ]
+    }
+    """
+ And the response is JSON and the status is 200 OK
+ And I can reach the website with username "cucumber"
+
+Scenario: Hello World!
+  When I navigate to the website "cucumber"
+  And I log in with "jimdo"
+  Then I see the page "Cucumber rocks!" in the navigation</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content smaller" ref="muenchhausen/01_muenchhausen/8">
+<h1>After</h1>
+
+<pre class="sh_cucumber"><code>@browser @rest-api
+Feature: REST API and browser testing works
+
+Background:
+  Given I have a website named "cucumber"
+  And a page named "Cucumber rocks!"
+
+Scenario: Cucumber rocks. 
+  When I navigate to the website
+  Then I see the page "Cucumber rocks!" in the navigation</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="muenchhausen/01_muenchhausen/9">
+<h1>Simple teardown</h1>
+
+<pre class="sh_ruby"><code>After("@rest-api") do
+ # always cleanup the test websites
+ http_req("DELETE", "/api/websites")
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="muenchhausen/01_muenchhausen/10">
+<h1>Outside in at its best.</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="muenchhausen/01_muenchhausen/11">
+<h1>So where's the PHP?</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="muenchhausen/01_muenchhausen/12">
+<h1>Now has become an implementation detail</h1></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="muenchhausen/01_muenchhausen/13">
+<h1>Why didn't we use <em>cuke4php</em>?</h1>
+
+<ul>
+<li>We didn't know at the time</li>
+<li>HTTP is the natural fit for the system</li>
+<li>It doesn't fit the official naming scheme for addons</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="muenchhausen/01_muenchhausen/14">
+<pre class="sh_ruby"><code>it "should adhere to the naming scheme" do
+  name.should ~= /cuke4*uke/
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="lessons_learned/01_lessons_learned/1">
+<h1>Our stack</h1>
+
+<ul>
+<li><a href="https://github.com/jarib/watir-webdriver">watir-webdriver</a></li>
+<li><a href="http://jenkins-ci.org/">Jenkins</a></li>
+<li><a href="http://www.x.org/archive/X11R6.8.1/doc/Xvfb.1.html">Xvfb</a></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="lessons_learned/01_lessons_learned/2">
+<h1>watir-webdriver</h1>
+
+<pre class="sh_ruby"><code>@browser.goto('jimdo.com')
+@browser.div(:id, 'header')
+        .ul(:class, 'nav').links</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="lessons_learned/01_lessons_learned/3">
+<h1>Jenkins</h1>
+
+<p><img src="./file/lessons_learned/trend1.png" width="800" height="600" alt="Jenkins - Test Trend"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="lessons_learned/01_lessons_learned/4">
+<h1>Common Pitfalls</h1></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="lessons_learned/01_lessons_learned/5">
+<pre class="sh_ruby"><code>timed out after 30 seconds
+(Watir::Wait::TimeoutError)</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content center smaller" ref="lessons_learned/01_lessons_learned/6">
+<pre class="sh_ruby"><code>Element is no longer attached to the DOM
+(Selenium::WebDriver::Error::ObsoleteElementError)</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="thanks/thanks">
+<h1>Thanks for bearing with me</h1></div>
+</div>
+</div>
+
+</body>
+</html>
