@@ -8,13 +8,17 @@
 !SLIDE
 # For what definition of stuck?
 
-!SLIDE
-## Maintaining a website without automated acceptance tests is _unpleasant_.
-
 !SLIDE bullets incremental 
 
-# AKA
-## THE BIG BALL OF MUD
+# Stuck in a big ball of mud
+
+!SLIDE
+# To rephrase it:
+
+!SLIDE
+## Maintaining an _organically_ grown website
+## without automated acceptance tests
+## becomes increasingly _unpleasant_ over time.
 
 !SLIDE
 

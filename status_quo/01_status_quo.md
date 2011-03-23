@@ -1,15 +1,14 @@
 !SLIDE bullets 
-# Status Quo Ante BDD #
-
+# Status Quo Ante Cucumerem #
 * How we previously handled our stuff
 
 !SLIDE bullets incremental
 # Acceptance criteria tracked in various Excel Sheets
 
+* Varying levels of detail
 * Manually executed by the whole team
 * Ending up in "test fests", possibly going on for a couple of days
 * If taken seriously, that means locking up the whole team for every new feature
-* Varying levels of detail
 
 !SLIDE bullets incremental
 # Some of those have been converted to Selenium by a consultant
@@ -22,23 +21,27 @@
 # Unclear requirements esp. due to I18N
 
 * What are the VAT regulations in Japan?
-* TODO
+* How do I refund a double booking from Kazakhstan?
+* Localization of currencies etc. 
 
 !SLIDE
-# Coordinate your features with all stakeholders
+# Coordinate your features with _all_ stakeholders
 
 !SLIDE
->One step forward, two step backwards, down in a Babylon...
+# _One step forward, two step backwards, down in a Babylon..._
 
 !SLIDE bullets
-## The good parts
+# The good parts
 
 * Automatic Deployment with ~hourly updates
 * Test environment is an exact replica of the live system
+* Excellent support team
+* Log aggregation
+
+!SLIDE
+# The biggest drawback
 
 !SLIDE bullets incremental
-# Biggest drawback
-
 # No bloody fixtures!?
 
 * Meaning no setup!
