@@ -27,7 +27,7 @@
 
 * What are the VAT regulations in Japan?
 * How do I refund a double booking from Kazakhstan?
-* Localization of currencies etc.
+* What's the format for postal addresses in Poland? 
 
 !SLIDE
 # It's not a bug!
@@ -41,7 +41,7 @@
 !SLIDE
 # _One step forward, two step backwards, down in a Babylon..._
 
-!SLIDE bullets
+!SLIDE bullets incremental
 # The good parts
 
 * Automatic Deployment with ~hourly updates
@@ -52,12 +52,15 @@
 !SLIDE
 # The biggest drawback
 
+!SLIDE
+# No bloody fixtures!
+
 !SLIDE bullets incremental
 # No bloody fixtures!?
 
 * Meaning no setup!
 * Meaning no teardown!
-* Meaning, resetting your tests manually by SSHing into various systems and deleting entries from MYSQL, oh no!!!!
+* Meaning, resetting your tests manually by SSHing into various systems and deleting entries from MySQL, oh no!!!!
 
 !SLIDE bullets incremental
 # Violation of the FIRST principle
