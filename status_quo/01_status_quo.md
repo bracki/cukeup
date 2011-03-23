@@ -9,7 +9,6 @@
 * often documenting the implementation instead of expecting behaviour
 
 !SLIDE bullets incremental
-# Acceptance criteria tracked in various Excel Sheets
 
 * Manually executed by the whole team
 * Ending up in "test fests", possibly going on for a couple of days
@@ -30,13 +29,10 @@
 * What's the format for postal addresses in Poland? 
 
 !SLIDE
-# It's not a bug!
+# It's not a bug report!
 
 !SLIDE
 # It's a feature _request_!
-
-!SLIDE
-# Coordinate your features with _all_ stakeholders
 
 !SLIDE
 # _One step forward, two step backwards, down in a Babylon..._

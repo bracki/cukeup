@@ -2,13 +2,13 @@
 # Jimdo
 ![Jimdo](logo.png)
 
-!SLIDE bullets
+!SLIDE bullets incremental
 # About Jimdo
 * super easy website creator
 * founded in 2007
 * located in Hamburg, Germany
 
-!SLIDE bullets
+!SLIDE bullets incremental
 # More about Jimdo
 * over 3.5 million websites created
 * available in 11 languages

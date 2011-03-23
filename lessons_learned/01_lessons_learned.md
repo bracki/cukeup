@@ -51,6 +51,9 @@
 * Keep it simple
 
 !SLIDE bullets incremental
+!SLIDE
+# Coordinate your features with _all_ stakeholders
+
 # Ruby in a PHP company?
 
 * Works great.
