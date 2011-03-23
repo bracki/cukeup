@@ -143,27 +143,31 @@
 </div>
 </div><div class="slide" data-transition="none"><div class="content" ref="bootstrapping/01_who/2">
 <h1>For what definition of stuck?</h1></div>
-</div><div class="slide" data-transition="none"><div class="content" ref="bootstrapping/01_who/3">
-<h2>Maintaining a website without automated acceptance tests is <em>unpleasant</em>.</h2></div>
-</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="bootstrapping/01_who/4">
-<h1>AKA</h1>
-
-<h2>THE BIG BALL OF MUD</h2></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="bootstrapping/01_who/3">
+<h1>Stuck in a big ball of mud</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="bootstrapping/01_who/4">
+<h1>To rephrase it:</h1></div>
 </div><div class="slide" data-transition="none"><div class="content" ref="bootstrapping/01_who/5">
-<h1>Hence the name "Bootstrapping"</h1></div>
+<h2>Maintaining an <em>organically</em> grown website</h2>
+
+<h2>without automated acceptance tests</h2>
+
+<h2>becomes increasingly <em>unpleasant</em> over time.</h2></div>
 </div><div class="slide" data-transition="none"><div class="content" ref="bootstrapping/01_who/6">
+<h1>Hence the name "Bootstrapping"</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="bootstrapping/01_who/7">
 <h1>Drag yourself out of the mud by your bootstraps.</h1>
 
 <h3>(Or your aristocratic wig, depends on who tells the story.)</h3></div>
-</div><div class="slide" data-transition="none"><div class="content full-page" ref="bootstrapping/01_who/7">
-<p><img src="./file/bootstrapping/bootstrapping.jpg" width="500" height="789" alt="Muenchhausen drags himself out of the mud"/></p>
+</div><div class="slide" data-transition="none"><div class="content full-page" ref="bootstrapping/01_who/8">
+<p><img src="./file/bootstrapping/bootstrapping.jpg" width="400" height="631" alt="Muenchhausen drags himself out of the mud"/></p>
 
 <ul>
 <li>http://www.goethezeitportal.de/index.php?id=4443</li>
 </ul>
 </div>
 </div><div class="slide" data-transition="none"><div class="content bullets" ref="status_quo/01_status_quo/1">
-<h1>Status Quo Ante BDD</h1>
+<h1>Status Quo Ante Cucumerem</h1>
 
 <ul>
 <li>How we previously handled our stuff</li>
@@ -173,13 +177,20 @@
 <h1>Acceptance criteria tracked in various Excel Sheets</h1>
 
 <ul>
-<li>Manually executed by the whole team</li>
-<li>Ending up in "test fests", possibly going on for a couple of days</li>
-<li>If taken seriously, that means locking up the whole team for every new feature</li>
-<li>Varying levels of detail</li>
+<li>Varying levels of detail,</li>
+<li>often documenting the implementation instead of expecting behaviour</li>
 </ul>
 </div>
 </div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="status_quo/01_status_quo/3">
+<h1>Acceptance criteria tracked in various Excel Sheets</h1>
+
+<ul>
+<li>Manually executed by the whole team</li>
+<li>Ending up in "test fests", possibly going on for a couple of days</li>
+<li>If taken seriously, that means locking up the whole team for every new feature</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="status_quo/01_status_quo/4">
 <h1>Some of those have been converted to Selenium by a consultant</h1>
 
 <ul>
@@ -188,38 +199,47 @@
 <li>Lead to unmaintained tests</li>
 </ul>
 </div>
-</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="status_quo/01_status_quo/4">
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="status_quo/01_status_quo/5">
 <h1>Unclear requirements esp. due to I18N</h1>
 
 <ul>
 <li>What are the VAT regulations in Japan?</li>
-<li>TODO</li>
+<li>How do I refund a double booking from Kazakhstan?</li>
+<li>What's the format for postal addresses in Poland?</li>
 </ul>
 </div>
-</div><div class="slide" data-transition="none"><div class="content" ref="status_quo/01_status_quo/5">
-<h1>Coordinate your features with all stakeholders</h1></div>
 </div><div class="slide" data-transition="none"><div class="content" ref="status_quo/01_status_quo/6">
-<blockquote><p>One step forward, two step backwards, down in a Babylon...</p></blockquote></div>
-</div><div class="slide" data-transition="none"><div class="content bullets" ref="status_quo/01_status_quo/7">
-<h2>The good parts</h2>
+<h1>It's not a bug!</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="status_quo/01_status_quo/7">
+<h1>It's a feature <em>request</em>!</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="status_quo/01_status_quo/8">
+<h1>Coordinate your features with <em>all</em> stakeholders</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="status_quo/01_status_quo/9">
+<h1><em>One step forward, two step backwards, down in a Babylon...</em></h1></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="status_quo/01_status_quo/10">
+<h1>The good parts</h1>
 
 <ul>
 <li>Automatic Deployment with ~hourly updates</li>
 <li>Test environment is an exact replica of the live system</li>
+<li>Excellent support team</li>
+<li>Log aggregation</li>
 </ul>
 </div>
-</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="status_quo/01_status_quo/8">
-<h1>Biggest drawback</h1>
-
+</div><div class="slide" data-transition="none"><div class="content" ref="status_quo/01_status_quo/11">
+<h1>The biggest drawback</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="status_quo/01_status_quo/12">
+<h1>No bloody fixtures!</h1></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="status_quo/01_status_quo/13">
 <h1>No bloody fixtures!?</h1>
 
 <ul>
 <li>Meaning no setup!</li>
 <li>Meaning no teardown!</li>
-<li>Meaning, resetting your tests manually by SSHing into various systems and deleting entries from MYSQL, oh no!!!!</li>
+<li>Meaning, resetting your tests manually by SSHing into various systems and deleting entries from MySQL, oh no!!!!</li>
 </ul>
 </div>
-</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="status_quo/01_status_quo/9">
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="status_quo/01_status_quo/14">
 <h1>Violation of the FIRST principle</h1>
 
 <ul>
@@ -230,7 +250,7 @@
 <li>Timely</li>
 </ul>
 </div>
-</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="status_quo/01_status_quo/10">
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="status_quo/01_status_quo/15">
 <h1>Tests are ...</h1>
 
 <ul>
@@ -276,7 +296,7 @@
   And I can reach the website with username "cucumber"
   And the website html title is "Can I haz Cukes?"</code></pre></div>
 </div><div class="slide" data-transition="none"><div class="content" ref="muenchhausen/01_muenchhausen/6">
-<h2>Use the API to replace the Given steps' implementations in the Scenarios.</h2></div>
+<h2>Use the API to replace step definitions.</h2></div>
 </div><div class="slide" data-transition="none"><div class="content smaller" ref="muenchhausen/01_muenchhausen/7">
 <h1>Before</h1>
 
@@ -361,14 +381,54 @@ end</code></pre></div>
 <p><img src="./file/lessons_learned/trend1.png" width="800" height="600" alt="Jenkins - Test Trend"/></p></div>
 </div><div class="slide" data-transition="none"><div class="content" ref="lessons_learned/01_lessons_learned/4">
 <h1>Common Pitfalls</h1></div>
-</div><div class="slide" data-transition="none"><div class="content center" ref="lessons_learned/01_lessons_learned/5">
+</div><div class="slide" data-transition="none"><div class="content" ref="lessons_learned/01_lessons_learned/5">
+<h1>It's all about timing</h1></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="lessons_learned/01_lessons_learned/6">
 <pre class="sh_ruby"><code>timed out after 30 seconds
 (Watir::Wait::TimeoutError)</code></pre></div>
-</div><div class="slide" data-transition="none"><div class="content center smaller" ref="lessons_learned/01_lessons_learned/6">
+</div><div class="slide" data-transition="none"><div class="content center smaller" ref="lessons_learned/01_lessons_learned/7">
 <pre class="sh_ruby"><code>Element is no longer attached to the DOM
 (Selenium::WebDriver::Error::ObsoleteElementError)</code></pre></div>
-</div><div class="slide" data-transition="none"><div class="content" ref="thanks/thanks">
-<h1>Thanks for bearing with me</h1></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="lessons_learned/01_lessons_learned/8">
+<h1>No broken windows!</h1>
+
+<ul>
+<li>Establish a culture sensitive to those brittle tests</li>
+<li>Fix them at once, dig down to the problem</li>
+<li>Needs discipline</li>
+<li>Otherwise all is in vain</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="lessons_learned/01_lessons_learned/9">
+<h1>Pick your own stack</h1>
+
+<ul>
+<li>Go with what fits you</li>
+<li>Don't try to force Rails specific solution</li>
+<li>Keep it simple</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="lessons_learned/01_lessons_learned/10">
+<h1>Ruby in a PHP company?</h1>
+
+<ul>
+<li>Works great.</li>
+<li>Fully embraced by team</li>
+<li>Yippieh, I actually get to work with some <em>awesome</em> technology</li>
+<li>Diversity opens up room for improvement</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="thanks/thanks/1">
+<h1>What it boils down to</h1>
+
+<ul>
+<li>Help yourself.</li>
+<li>Feel the pain.</li>
+<li>If you're stuck, apply the more Cucumbers rule.</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="thanks/thanks/2">
+<h1>Thanks for having me</h1></div>
 </div>
 </div>
 
