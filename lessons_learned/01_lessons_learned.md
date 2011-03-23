@@ -18,7 +18,7 @@
 ![Jenkins - Test Trend](trend1.png)
 
 !SLIDE
-# Common Pitfalls
+# Lessons Learned
 
 !SLIDE
 # It's all about timing
