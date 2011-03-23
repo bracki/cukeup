@@ -32,7 +32,7 @@
       And the website html title is "Can I haz Cukes?"
 
 !SLIDE
-## Use the API to replace the Given steps' implementations in the Scenarios.
+## Use the API to replace step definitions.
 
 !SLIDE smaller
 # Before
