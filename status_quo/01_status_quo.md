@@ -5,7 +5,12 @@
 !SLIDE bullets incremental
 # Acceptance criteria tracked in various Excel Sheets
 
-* Varying levels of detail
+* Varying levels of detail,
+* often documenting the implementation instead of expecting behaviour
+
+!SLIDE bullets incremental
+# Acceptance criteria tracked in various Excel Sheets
+
 * Manually executed by the whole team
 * Ending up in "test fests", possibly going on for a couple of days
 * If taken seriously, that means locking up the whole team for every new feature
@@ -22,7 +27,13 @@
 
 * What are the VAT regulations in Japan?
 * How do I refund a double booking from Kazakhstan?
-* Localization of currencies etc. 
+* Localization of currencies etc.
+
+!SLIDE
+# It's not a bug!
+
+!SLIDE
+# It's a feature _request_!
 
 !SLIDE
 # Coordinate your features with _all_ stakeholders

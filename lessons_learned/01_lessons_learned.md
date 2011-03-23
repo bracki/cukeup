@@ -20,6 +20,9 @@
 !SLIDE
 # Common Pitfalls
 
+!SLIDE
+# It's all about timing
+
 !SLIDE center 
 
     @@@ ruby
@@ -32,3 +35,25 @@
     Element is no longer attached to the DOM
     (Selenium::WebDriver::Error::ObsoleteElementError)
 
+!SLIDE bullets incremental
+# No broken windows!
+
+* Establish a culture sensitive to those brittle tests
+* Fix them at once, dig down to the problem
+* Needs discipline
+* Otherwise all is in vain
+
+!SLIDE bullets incremental
+# Pick your own stack
+
+* Go with what fits you
+* Don't try to force Rails specific solution
+* Keep it simple
+
+!SLIDE bullets incremental
+# Ruby in a PHP company?
+
+* Works great.
+* Fully embraced by team
+* Yippieh, I actually get to work with some _awesome_ technology
+* Diversity opens up room for improvement
