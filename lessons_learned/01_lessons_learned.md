@@ -36,6 +36,34 @@
     (Selenium::WebDriver::Error::ObsoleteElementError)
 
 !SLIDE bullets incremental
+# Maintainable features?
+
+* Don't talk to the UI directly
+* Use Page Objects
+
+!SLIDE
+
+    @@@ruby
+    class Login
+      def initialize(browser)
+        @browser = browser
+      end
+
+      def set_credentials(passwd = 'foobar')
+        @browser.input(:text, 'passwd').set(passwd)
+        @browser.link(:id, 'login').click
+      end
+    end
+
+!SLIDE
+
+    @@@ruby
+    When /^I log in with a valid password$/ do
+      login = Login.new(@browser)
+      login.set_credentials
+    end
+
+!SLIDE bullets incremental
 # No broken windows!
 
 * Establish a culture sensitive to those brittle tests
