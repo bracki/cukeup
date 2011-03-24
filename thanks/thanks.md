@@ -3,7 +3,7 @@
 
 * Help yourself.
 * Feel the pain.
-* If you're stuck, apply the more Cucumbers rule.
+* Use more Cucumber.
 
 !SLIDE
 # Thanks for having me

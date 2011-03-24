@@ -41,6 +41,24 @@
 * Don't talk to the UI directly
 * Use Page Objects
 
+!SLIDE 
+# Don't do that!
+
+    @@@ruby
+    When /^I log in with "([^"]*)"$/ do |pwd|
+      @browser.input(:text, 'passwd').set(pwd)
+      @browser.link(:id, 'login').click
+    end
+
+!SLIDE
+# Do this instead. 
+
+    @@@ruby
+    When /^I log in with a valid password$/ do
+      login = Login.new(@browser)
+      login.set_credentials
+    end
+
 !SLIDE
 
     @@@ruby
@@ -49,19 +67,12 @@
         @browser = browser
       end
 
-      def set_credentials(passwd = 'foobar')
-        @browser.input(:text, 'passwd').set(passwd)
+      def set_credentials(pwd = 'foo')
+        @browser.input(:text, 'passwd').set(pwd)
         @browser.link(:id, 'login').click
       end
     end
 
-!SLIDE
-
-    @@@ruby
-    When /^I log in with a valid password$/ do
-      login = Login.new(@browser)
-      login.set_credentials
-    end
 
 !SLIDE bullets incremental
 # No broken windows!
@@ -79,8 +90,6 @@
 * Keep it simple
 
 !SLIDE bullets incremental
-!SLIDE
-# Coordinate your features with _all_ stakeholders
 
 # Ruby in a PHP company?
 
