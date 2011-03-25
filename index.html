@@ -90,7 +90,7 @@
 <h1>Jimdo</h1>
 
 <p><img src="./file/about/logo.png" width="372" height="294" alt="Jimdo"/></p></div>
-</div><div class="slide" data-transition="none"><div class="content bullets" ref="about/02_jimdo/2">
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="about/02_jimdo/2">
 <h1>About Jimdo</h1>
 
 <ul>
@@ -99,7 +99,7 @@
 <li>located in Hamburg, Germany</li>
 </ul>
 </div>
-</div><div class="slide" data-transition="none"><div class="content bullets" ref="about/02_jimdo/3">
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="about/02_jimdo/3">
 <h1>More about Jimdo</h1>
 
 <ul>
@@ -129,6 +129,7 @@
 <li>Who needs bootstrapping anyways?</li>
 <li>Status Quo Ante Cucumerem</li>
 <li>The M&#xFC;nchhausen Move</li>
+<li>Our stack</li>
 <li>Lessons Learned</li>
 </ul>
 </div>
@@ -182,8 +183,6 @@
 </ul>
 </div>
 </div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="status_quo/01_status_quo/3">
-<h1>Acceptance criteria tracked in various Excel Sheets</h1>
-
 <ul>
 <li>Manually executed by the whole team</li>
 <li>Ending up in "test fests", possibly going on for a couple of days</li>
@@ -209,14 +208,12 @@
 </ul>
 </div>
 </div><div class="slide" data-transition="none"><div class="content" ref="status_quo/01_status_quo/6">
-<h1>It's not a bug!</h1></div>
+<h1>It's not a bug report!</h1></div>
 </div><div class="slide" data-transition="none"><div class="content" ref="status_quo/01_status_quo/7">
 <h1>It's a feature <em>request</em>!</h1></div>
 </div><div class="slide" data-transition="none"><div class="content" ref="status_quo/01_status_quo/8">
-<h1>Coordinate your features with <em>all</em> stakeholders</h1></div>
-</div><div class="slide" data-transition="none"><div class="content" ref="status_quo/01_status_quo/9">
 <h1><em>One step forward, two step backwards, down in a Babylon...</em></h1></div>
-</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="status_quo/01_status_quo/10">
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="status_quo/01_status_quo/9">
 <h1>The good parts</h1>
 
 <ul>
@@ -226,11 +223,11 @@
 <li>Log aggregation</li>
 </ul>
 </div>
-</div><div class="slide" data-transition="none"><div class="content" ref="status_quo/01_status_quo/11">
+</div><div class="slide" data-transition="none"><div class="content" ref="status_quo/01_status_quo/10">
 <h1>The biggest drawback</h1></div>
-</div><div class="slide" data-transition="none"><div class="content" ref="status_quo/01_status_quo/12">
+</div><div class="slide" data-transition="none"><div class="content" ref="status_quo/01_status_quo/11">
 <h1>No bloody fixtures!</h1></div>
-</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="status_quo/01_status_quo/13">
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="status_quo/01_status_quo/12">
 <h1>No bloody fixtures!?</h1>
 
 <ul>
@@ -239,7 +236,7 @@
 <li>Meaning, resetting your tests manually by SSHing into various systems and deleting entries from MySQL, oh no!!!!</li>
 </ul>
 </div>
-</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="status_quo/01_status_quo/14">
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="status_quo/01_status_quo/13">
 <h1>Violation of the FIRST principle</h1>
 
 <ul>
@@ -250,7 +247,7 @@
 <li>Timely</li>
 </ul>
 </div>
-</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="status_quo/01_status_quo/15">
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="status_quo/01_status_quo/14">
 <h1>Tests are ...</h1>
 
 <ul>
@@ -390,6 +387,39 @@ end</code></pre></div>
 <pre class="sh_ruby"><code>Element is no longer attached to the DOM
 (Selenium::WebDriver::Error::ObsoleteElementError)</code></pre></div>
 </div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="lessons_learned/01_lessons_learned/8">
+<h1>Maintainable features?</h1>
+
+<ul>
+<li>Don't talk to the UI directly</li>
+<li>Use Page Objects</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="lessons_learned/01_lessons_learned/9">
+<h1>Don't do that!</h1>
+
+<pre class="sh_ruby"><code>When /^I log in with "([^"]*)"$/ do |pwd|
+  @browser.input(:text, 'passwd').set(pwd)
+  @browser.link(:id, 'login').click
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="lessons_learned/01_lessons_learned/10">
+<h1>Do this instead.</h1>
+
+<pre class="sh_ruby"><code>When /^I log in with a valid password$/ do
+  login = Login.new(@browser)
+  login.set_credentials
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="lessons_learned/01_lessons_learned/11">
+<pre class="sh_ruby"><code>class Login
+  def initialize(browser)
+    @browser = browser
+  end
+
+  def set_credentials(pwd = 'foo')
+    @browser.input(:text, 'passwd').set(pwd)
+    @browser.link(:id, 'login').click
+  end
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="lessons_learned/01_lessons_learned/12">
 <h1>No broken windows!</h1>
 
 <ul>
@@ -399,7 +429,7 @@ end</code></pre></div>
 <li>Otherwise all is in vain</li>
 </ul>
 </div>
-</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="lessons_learned/01_lessons_learned/9">
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="lessons_learned/01_lessons_learned/13">
 <h1>Pick your own stack</h1>
 
 <ul>
@@ -408,7 +438,7 @@ end</code></pre></div>
 <li>Keep it simple</li>
 </ul>
 </div>
-</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="lessons_learned/01_lessons_learned/10">
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="lessons_learned/01_lessons_learned/14">
 <h1>Ruby in a PHP company?</h1>
 
 <ul>
@@ -424,7 +454,7 @@ end</code></pre></div>
 <ul>
 <li>Help yourself.</li>
 <li>Feel the pain.</li>
-<li>If you're stuck, apply the more Cucumbers rule.</li>
+<li>Use more Cucumber.</li>
 </ul>
 </div>
 </div><div class="slide" data-transition="none"><div class="content" ref="thanks/thanks/2">
